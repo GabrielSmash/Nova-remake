@@ -1,0 +1,297 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    color: black
+}
+
+body.modo-escuro {
+    background-color: #1c1c1c;
+    color: aliceblue;
+}
+
+.conteudo-drop {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #16213c;
+    width: 225px;
+    height: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: height 0.3s ease;
+    top: 80px;
+    left: auto;
+    right: auto;
+    text-align: center;
+    max-height: 0;
+    border-radius: 10px;
+}
+
+.conteudo-drop-2 {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #16213c;
+    width: 225px;
+    height: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: height 0.3s ease;
+    top: 80px;
+    right: 290PX;
+    text-align: center;
+    max-height: 0;
+    border-radius: 10px;
+}
+
+.conteudo-drop-3 {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #16213c;
+    width: 225px;
+    height: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: height 0.3s ease;
+    top: 80px;
+    right: 180px;
+    text-align: center;
+    max-height: 0;
+    border-radius: 10px;
+}
+
+.conteudo-drop a {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.conteudo-drop-2 a {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.conteudo-drop-3 a {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.dropdown:hover .conteudo-drop {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    max-height: 100px;
+    transition: opacity 0.3s, visibility 0.3s, max-height 0.3s ease;
+
+}
+
+.dropdown:hover .conteudo-drop-2 {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    max-height: 100px;
+    transition: opacity 0.3s, visibility 0.3s, max-height 0.3s ease;
+
+}
+
+.dropdown:hover .conteudo-drop-3 {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    max-height: 100px;
+    transition: opacity 0.3s, visibility 0.3s, max-height 0.3s ease;
+
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #16213c;
+    box-shadow: 1px 16px 32px 1px rgba(0, 0, 0, 0.329);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+header .dropbtn,
+.home,
+.empresa,
+.contato {
+    border: none;
+    background: none;
+    padding-left: 20px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.dropbtn,
+.home,
+.contato,
+a {
+    color: white;
+}
+
+.dropbtn, .header-butons {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100px;
+}
+
+header .imagem-logo,
+.logo {
+    padding-top: 1%;
+    padding-right: 40%;
+    width: 250px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.nova-fundo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.titulo-linha,
+.apresentacao,
+.titulo-info {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtos .linha-produtos {
+    background: none;
+    border-radius: 30px;
+    margin-right: 55px;
+    margin-left: 55px;
+    transition: 0.3s ease-in-out, filter 0.5s;
+    box-shadow: 1px 16px 32px 1px rgba(0, 0, 0, 0.329);
+}
+
+.produtos .linha-produtos:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+    filter: brightness(110%);
+}
+
+.nome-produtos {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nome-produtos .titulo {
+    margin-top: 20px;
+}
+
+.apresentacao {
+    margin-top: 80px;
+}
+
+.texto {
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.direcao {
+    background-color: #16213c;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 60px;
+    transition: filter 0.5s;
+}
+.direcao:hover{
+    cursor: pointer;
+    filter: brightness(140%);
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre {
+    height: 160px;
+    background: none;
+    margin-right: 85px;
+    margin-left: 85px;
+    transition: 0.3s ease-in-out, filter 0.5s;
+}
+.nome-info .titulo-dois{
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 80px;
+}
+
+.sobre:hover{
+    transform: scale(1.10);
+    filter: brightness(110%);
+}
+
+footer{
+    background-color: #16213c;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.infos-rodape{
+    display:flex
+}
+
+.infos-rodape .caixa{
+    margin: 60px;
+
+}
+
+.caixa .titulo-rodape{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.caixa .conteudo-rodape{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.conteudo-rodape .numero{
+    font-weight: bold;
+}
+
+.conteudo-rodape .navegue:hover a{
+    color: #a8bbeb;
+}
